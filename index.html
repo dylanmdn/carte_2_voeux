@@ -1,0 +1,34 @@
+<!DOCTYPE html5>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Joyeux Noël</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="preload">
+    <!-- #LE CONTAINER DES RENSEIGNEMENTS -->
+    <div class="login_container"> 
+        <!-- #LE FORMULAIRE -->
+        <form action="recup_form.php" method="GET">
+            <!-- #LES ENTETES -->
+            <div class="titles">
+                <h1>Bonjour, bienvenue</h1>
+                <h3>Créer votre carte de voeux</h3>
+            </div>
+            <!-- #CHAMPS DU FORMULAIRE-->
+            <input type="text" name="nom" placeholder="Nom" onkeypress="return /[a-z]/i.test(event.key)" required><br>
+            <input type="text" name="prenom" placeholder="Prénom" onkeypress="return /[a-z]/i.test(event.key)" required><br>
+
+            <!-- #MESSAGE PERSONNALISE -->
+            <div class="message_perso">
+                <textarea name="message_perso" placeholder="Écrivez une courte phrase..." maxlength="141"></textarea>
+            </div>
+            <!-- #BOUTON SOUMETTRE -->
+            <input type="submit" class="btn" value="Créer"> 
+        </form> 
+        
+    </div> 
+    
+    
+</body>
+</html>
